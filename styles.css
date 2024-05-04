@@ -1,0 +1,116 @@
+/* Custom Variables */
+:root{
+    --primary-green: #70c1b3;
+    --primary-blue: #237ba1;
+    --primary-yellow: #ffe065;
+    --primary-red: #f25f5c;
+    --primary-black: #50514f;
+    --text-white: white;
+    --text-black: black;
+    --font-primary: Consolas, serif;
+    --font-secondary: Arial, sans-serif;
+    --font-tertiary: Arial, sans-serif;
+
+}
+
+/*desktop*/
+@media only screen and (min-width: 1370px) and (max-width: 1605px){
+    /* STYLES GO HERE */
+
+}
+
+/*laptop 1024 res*/
+@media only screen and (min-device-width: 768px)and (max-device-width: 1024px) {
+    /* STYLES GO HERE */
+}
+
+/* laptop 1366 Resolution */
+@media only screen and (min-width: 1030px) and (max-width: 1366px) {
+    /* STYLES GO HERE */
+}
+
+body{
+ font-family: var(--font-primary);
+ overflow-x: hidden;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 25%;
+    height: 100%;
+    background-color: var(--primary-blue);
+    z-index:1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+nav header{
+    font-size: 1.5rem;
+    /* border-bottom: 2px solid black; */
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+
+
+.nav-link{
+    /* border-bottom: 1.5px solid black; */
+    text-decoration: none;
+    color: var(--text-black);
+    width: 100%;
+    height: 2rem;
+    text-align: left;
+    margin-top: 1rem;
+ 
+}
+
+
+
+#main-doc{
+    position: absolute;
+    left: 25%;
+    margin-left: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 75%;
+    height: 100%;
+    flex-wrap: nowrap;
+    
+
+}
+
+
+.main-section header{
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-left: 0.25rem;
+}
+
+.main-section p, li{
+    margin-left: 1rem;
+    font-family: var(--font-secondary);
+}
+
+.main-section pre, li{
+    margin-left: 2rem;
+}
+
+.main-section pre{
+    display: block;
+    background-color: var(--primary-black);
+    color: var(--text-white);
+    width: 75%;
+    margin-top: 1px;
+    line-height: 2;
+    border-radius: 5px;
+    opacity: 50%;
+}
+
+.main-section code{
+    text-align: left;
+}
